@@ -1,0 +1,91 @@
+/* colores principales */
+:root {
+  --color-fondo: #1f1f1f;
+  --color-texto: #fff;
+  --color-verde: #27ae60;
+  --color-rojo: #e74c3c;
+}
+
+/* tema oscuro */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--color-texto);
+  border-radius: 5px;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--color-texto);
+  border-radius: 5px;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+button {
+  background-color: var(--color-verde);
+  color: var(--color-texto);
+  border: none;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.desencriptar {
+  background-color: var(--color-rojo);
+}
+
+button:hover {
+  background-color: #2ea7cc;
+}
+
+#resultado1,
+#resultado2 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid var(--color-texto);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  word-break: break-all;
+
+}
+
+#resultado1 {
+  background-color: var(--color-verde);
+  color: var(--color-texto);
+}
+
+#resultado2 {
+  background-color: var(--color-rojo);
+  color: var(--color-texto);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.encriptar, .desencriptar {
+  padding: 20px;
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="cifrado.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Sistema de cifrado</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="encriptar">
+            <label for="texto1">Texto a Encriptar:</label>
+            <textarea id="texto1" name="texto1" rows="5" cols="50"></textarea>
+            <button type="button" class="encriptar" onclick="encriptar()">Encriptar</button>
+            <div>
+                <p>Texto encriptado:</p>
+                <p id="resultado1" class="typewriter"></p>
+            </div>
+        </div>
+        <div class="desencriptar">
+            <label for="texto2">Texto a Desencriptar:</label>
+            <textarea id="texto2" name="texto2" rows="5" cols="50"></textarea>
+            <button type="button" class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+            <div>
+                <p>Texto desencriptado:</p>
+                <p id="resultado2" class="typewriter"></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
