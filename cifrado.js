@@ -13,3 +13,4 @@ const desencriptar = () => {
     var textoDesencriptado = CryptoJS.AES.decrypt(texto2, clave).toString(CryptoJS.enc.Utf8);
     document.getElementById("resultado2").innerHTML = textoDesencriptado;
 }
+//https://www.npmjs.com/package/crypto-js

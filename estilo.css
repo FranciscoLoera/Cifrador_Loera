@@ -42,9 +42,10 @@ input {
 button {
   background-color: var(--color-verde);
   color: var(--color-texto);
+  font-size: 25px;
   border: none;
   padding: 10px;
-  margin-right: 10px;
+  margin: 10px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -55,6 +56,10 @@ button.desencriptar {
 }
 
 button:hover {
+  background-color: #2ea7cc;
+}
+#clave{
+  font-size: 25px;
   background-color: #2ea7cc;
 }
 
@@ -82,10 +87,17 @@ button:hover {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
 }
 .encriptar, .desencriptar {
-  padding: 20px;
+  grid-column: span 1;
+  margin: 20px;
+  padding-right: 20px;
 }
 
+.pClave {
+  grid-column: span 2;
+  margin: 20px;
+  padding-right: 20px;
+}
